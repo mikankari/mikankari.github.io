@@ -141,6 +141,12 @@ h3,
 .worklist li:nth-child(2n+1) > div,
 .worklist li:nth-child(2n+1) > a > div {
   margin-right: 20px; }
+.worklist .keyword {
+  background-color: #333333;
+  color: #cccccc;
+  margin-right: 5px;
+  border-radius: 12px;
+  padding: 0px 5px; }
 
 .linklist li > div,
 .linklist li > a > div {

@@ -192,6 +192,14 @@ h3,
 
 .worklist{
 	@include twocolumnlist;
+	.keyword{
+		background-color: #333333;
+		color: #cccccc;
+//		font-size: 100%;
+		margin-right: 5px;
+		border-radius: 12px;
+		padding: 0px 5px;
+	}
 }
 
 .linklist{
