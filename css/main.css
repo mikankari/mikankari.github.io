@@ -1,7 +1,6 @@
 @font-face {
   font-family: mplus-1c-light;
   src: url(http://mplus-fonts.sourceforge.jp/webfonts/mplus-1c-light.ttf); }
-
 body {
   background-color: #f0f0f0;
   color: #333333;
@@ -69,7 +68,7 @@ nav ul,
       text-decoration: none; }
 
 .navbutton {
-  background-color: #f0bba8;
+  background-color: #F0BBA8;
   font-family: "M+ 1c regular", Meiryo, sans-serif;
   text-align: center;
   vertical-align: middle;
@@ -83,7 +82,7 @@ nav ul,
     font-size: 86%; }
 
 h2 {
-  background-color: #f0bba8;
+  background-color: #F0BBA8;
   font-family: "M+ 1c light", Meiryo, sans-serif;
   font-size: 100%;
   text-align: center;
@@ -169,28 +168,28 @@ footer {
     margin-bottom: 20px; }
 
 #main section:nth-child(1) h2 {
-  background-color: #f0bba8; }
+  background-color: #F0BBA8; }
 
 header nav li:nth-child(1) .navbutton {
-  background-color: #f0bba8; }
+  background-color: #F0BBA8; }
 
 #main section:nth-child(2) h2 {
-  background-color: #f0dfa8; }
+  background-color: #F0DFA8; }
 
 header nav li:nth-child(2) .navbutton {
-  background-color: #f0dfa8; }
+  background-color: #F0DFA8; }
 
 #main section:nth-child(3) h2 {
-  background-color: #b9f0a8; }
+  background-color: #B9F0A8; }
 
 header nav li:nth-child(3) .navbutton {
-  background-color: #b9f0a8; }
+  background-color: #B9F0A8; }
 
 #main section:nth-child(4) h2 {
-  background-color: #a8ddf0; }
+  background-color: #A8DDF0; }
 
 header nav li:nth-child(4) .navbutton {
-  background-color: #a8ddf0; }
+  background-color: #A8DDF0; }
 
 ins {
   background-color: #999999;

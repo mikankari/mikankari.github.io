@@ -1,0 +1,66 @@
+@font-face {
+  font-family: mplus-1c-light;
+  src: url(http://mplus-fonts.sourceforge.jp/webfonts/mplus-1c-light.ttf); }
+body {
+  background-color: #f0f0f0;
+  color: #333333;
+  font-family: Meiryo, sans-serif;
+  font-size: 87.5%; }
+
+h1 {
+  font-family: "M+ 1c light", Meiryo, sans-serif;
+  font-weight: normal; }
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1; }
+  header nav ul li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px; }
+    header nav ul li:first-child {
+      padding-left: 0; }
+    header nav ul li:last-child {
+      padding-right: 0; }
+    header nav ul li.last {
+      padding-right: 0; }
+
+h2 {
+  background-color: #F0BBA8;
+  font-family: "M+ 1c light", Meiryo, sans-serif;
+  font-size: 100%;
+  text-align: center;
+  margin: 0px 20px;
+  padding: 20px;
+  border-radius: 20px; }
+
+#main section:nth-child(1) h2 {
+  background-color: #F0BBA8; }
+
+header nav li:nth-child(1) .navbutton {
+  background-color: #F0BBA8; }
+
+#main section:nth-child(2) h2 {
+  background-color: #F0DFA8; }
+
+header nav li:nth-child(2) .navbutton {
+  background-color: #F0DFA8; }
+
+#main section:nth-child(3) h2 {
+  background-color: #B9F0A8; }
+
+header nav li:nth-child(3) .navbutton {
+  background-color: #B9F0A8; }
+
+#main section:nth-child(4) h2 {
+  background-color: #A8DDF0; }
+
+header nav li:nth-child(4) .navbutton {
+  background-color: #A8DDF0; }

@@ -1,0 +1,66 @@
+@import "compass";
+
+$base_color: #f0f0f0;
+$first_color: #F0BBA8;
+$second_color: #F0DFA8;
+$third_color: #B9F0A8;
+$fourth_color: #A8DDF0;
+$dullbase_color: #999999;
+$text_color: #333333;
+$dulltext_color: #666666;
+
+@font-face{
+	font-family: mplus-1c-light;
+	src: url(http://mplus-fonts.sourceforge.jp/webfonts/mplus-1c-light.ttf);
+}
+
+body{
+	background-color: $base_color;
+	color: $text_color;
+	font-family: Meiryo, sans-serif;
+	font-size: 87.5%;
+}
+
+//header{
+	h1{
+		font-family: "M+ 1c light", Meiryo, sans-serif;
+		font-weight: normal;
+	}
+//}
+
+header{
+	nav{
+		ul{
+			@include horizontal-list;
+		}
+	}
+}
+
+h2{
+	background-color: $first_color;
+	font-family: "M+ 1c light", Meiryo, sans-serif;
+	font-size: 100%;
+	text-align: center;
+	margin: 0px 20px;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+@for $i from 1 through 4{
+	$color: #ffffff;
+	@if $i == 1{
+		$color: $first_color;
+	} @else if $i == 2{
+		$color: $second_color;
+	} @else if $i == 3{
+		$color: $third_color;
+	} @else if $i == 4{
+		$color: $fourth_color;
+	}
+	#main section:nth-child(#{$i}) h2{
+		background-color: $color;
+	}
+	header nav li:nth-child(#{$i}) .navbutton{
+		background-color: $color;
+	}
+}
