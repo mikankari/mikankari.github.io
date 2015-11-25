@@ -1,5 +1,3 @@
-@import "compass";
-
 $base_color: #f0f0f0;
 $first_color: #F0BBA8;
 $second_color: #F0DFA8;
@@ -14,25 +12,120 @@ $dulltext_color: #666666;
 	src: url(http://mplus-fonts.sourceforge.jp/webfonts/mplus-1c-light.ttf);
 }
 
+@mixin clearfix{
+	&:after{
+		content: "";
+		clear: both;
+		display: block;
+	}
+}
+
+@mixin blockcentering($width){
+	margin-left: auto;
+	margin-right: auto;
+	width: $width;
+}
+
+@mixin imagereplace($url, $width, $height){
+	background-image: url(../#{$url});
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: $width $height;
+	text-indent: 100%;
+	line-height: $height;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
 body{
 	background-color: $base_color;
 	color: $text_color;
 	font-family: Meiryo, sans-serif;
 	font-size: 87.5%;
+	margin: 0px;
+	padding: 0px;
 }
 
-//header{
-	h1{
-		font-family: "M+ 1c light", Meiryo, sans-serif;
-		font-weight: normal;
-	}
-//}
-
 header{
+//	@include blockcentering(600px);
+	@include blockcentering(300px);
+//	margin-top: 75px;
+//	margin-top: 75px / 2;
+	margin-top: 36px;
+	text-align: center;
+	h1{
+//		font-size: 100%;
+		.title{
+//			@include imagereplace("images/title.png", 405px, 47px);
+			@include imagereplace("images/title.png", 300px, 35px);
+//			font-family: "M+ 1c thin";
+//			font-size: 342.9%;
+		}
+		.title-small{
+//			@include imagereplace("images/title-small.png", 405px, 23px);
+			@include imagereplace("images/title-small.png", 300px, 17px);
+			position: relative;
+			left: -2px;
+			margin-bottom: 17px;
+//			font-family: "M+ 1c regular";
+//			font-size: 203.6%;
+		}
+	}
+	p{
+//		@include blockcentering(600px);
+		@include blockcentering(300px);
+		color: $dulltext_color;
+//		margin-top: 40px;
+		margin-top: 40px / 2;
+		position: relative;
+		left: 6px;
+		ins{
+			display: none;
+		}
+	}
 	nav{
 		ul{
-			@include horizontal-list;
+//			@include blockcentering(600px);
+			@include blockcentering(300px);
+//			margin-top: 95px;
+			margin-top: 95px / 2;
 		}
+	}
+	.scrollable{
+		margin-bottom: 40px;
+	}
+}
+
+nav,
+#works
+{
+	ul{
+		@include clearfix;
+		padding-left: 0px;
+		li{
+			list-style-type: none;
+			float: left;
+			a{
+				color: $text_color;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.navbutton{
+	background-color: $first_color;
+	font-family: "M+ 1c regular", Meiryo, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+	margin: 10px;
+	padding-top: 45px;
+	border-radius: 65px;
+	width: 130px;
+	height: 130px - 45px;
+	.title-small{
+		color: $dulltext_color;
+		font-size: 86%;
 	}
 }
 
@@ -44,6 +137,103 @@ h2{
 	margin: 0px 20px;
 	padding: 20px;
 	border-radius: 20px;
+//	@media screen and (min-width: 960px){
+//		@include blockcentering(880px);
+//	}
+	.title{
+		font-size: 172%;
+	}
+	.title-small{
+		color: $dulltext_color;
+		font-size: 129%;
+	}
+	&+div{
+//		@include blockcentering(580px);
+		@include blockcentering(280px);
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
+
+.clearfix{
+	@include clearfix;
+	.left{
+		float: left;
+	}
+	.right{
+		float: right;
+	}
+}
+
+h3,
+.name{
+	font-family: mplus-1c-light, Meiryo, sans-serif;
+//	font-weight: normal;
+	font-size: 143%;
+}
+
+.name-small{
+//	color: $dulltext_color;
+	font-family: mplus-1c-light, Meiryo, sans-serif;
+	font-size: 86%;
+}
+
+.meimage{
+	border-radius: 65px;
+}
+
+.meterlist{
+	div{
+		width: 146px;
+		display: inline-block;
+	}
+	meter{
+//		width: 389px;
+	}
+}
+
+@mixin twocolumnlist{
+	li>div,
+	li>a>div{
+		width: 280px;
+		margin-bottom: 20px;
+	}
+	li:nth-child(2n+1)>div,
+	li:nth-child(2n+1)>a>div{
+		margin-right: 20px;
+	}
+}
+
+.worklist{
+	@include twocolumnlist;
+	.keyword{
+		background-color: $third_color;
+//		color: $text_color;
+//		font-size: 100%;
+		margin-right: 5px;
+		border-radius: 12px;
+		padding: 0px 5px;
+	}
+}
+
+.linklist{
+	@include twocolumnlist;
+	div>div>*{
+		vertical-align: middle;
+		
+	}
+}
+
+footer{
+	background-color: $dullbase_color;
+	padding: 1px;
+	.copyright{
+		color: $base_color;
+		font-size: 86%;
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
 }
 
 @for $i from 1 through 4{
@@ -63,4 +253,10 @@ h2{
 	header nav li:nth-child(#{$i}) .navbutton{
 		background-color: $color;
 	}
+}
+
+ins{
+	background-color: $dullbase_color;
+	color: $base_color;
+	text-decoration: none;
 }

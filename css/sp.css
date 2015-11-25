@@ -5,32 +5,85 @@ body {
   background-color: #f0f0f0;
   color: #333333;
   font-family: Meiryo, sans-serif;
-  font-size: 87.5%; }
+  font-size: 87.5%;
+  margin: 0px;
+  padding: 0px; }
 
-h1 {
-  font-family: "M+ 1c light", Meiryo, sans-serif;
-  font-weight: normal; }
-
-header nav ul {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  *zoom: 1; }
-  header nav ul li {
-    list-style-image: none;
-    list-style-type: none;
-    margin-left: 0;
+header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  margin-top: 36px;
+  text-align: center; }
+  header h1 .title {
+    background-image: url(../images/title.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 35px;
+    text-indent: 100%;
+    line-height: 35px;
     white-space: nowrap;
-    float: left;
-    padding-left: 4px;
-    padding-right: 4px; }
-    header nav ul li:first-child {
-      padding-left: 0; }
-    header nav ul li:last-child {
-      padding-right: 0; }
-    header nav ul li.last {
-      padding-right: 0; }
+    overflow: hidden; }
+  header h1 .title-small {
+    background-image: url(../images/title-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 17px;
+    text-indent: 100%;
+    line-height: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    left: -2px;
+    margin-bottom: 17px; }
+  header p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    color: #666666;
+    margin-top: 40px / 2;
+    position: relative;
+    left: 6px; }
+    header p ins {
+      display: none; }
+  header nav ul {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-top: 95px / 2; }
+  header .scrollable {
+    margin-bottom: 40px; }
+
+nav ul,
+#works ul {
+  padding-left: 0px; }
+  nav ul:after,
+  #works ul:after {
+    content: "";
+    clear: both;
+    display: block; }
+  nav ul li,
+  #works ul li {
+    list-style-type: none;
+    float: left; }
+    nav ul li a,
+    #works ul li a {
+      color: #333333;
+      text-decoration: none; }
+
+.navbutton {
+  background-color: #F0BBA8;
+  font-family: "M+ 1c regular", Meiryo, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  margin: 10px;
+  padding-top: 45px;
+  border-radius: 65px;
+  width: 130px;
+  height: 85px; }
+  .navbutton .title-small {
+    color: #666666;
+    font-size: 86%; }
 
 h2 {
   background-color: #F0BBA8;
@@ -40,6 +93,75 @@ h2 {
   margin: 0px 20px;
   padding: 20px;
   border-radius: 20px; }
+  h2 .title {
+    font-size: 172%; }
+  h2 .title-small {
+    color: #666666;
+    font-size: 129%; }
+  h2 + div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block; }
+.clearfix .left {
+  float: left; }
+.clearfix .right {
+  float: right; }
+
+h3,
+.name {
+  font-family: mplus-1c-light, Meiryo, sans-serif;
+  font-size: 143%; }
+
+.name-small {
+  font-family: mplus-1c-light, Meiryo, sans-serif;
+  font-size: 86%; }
+
+.meimage {
+  border-radius: 65px; }
+
+.meterlist div {
+  width: 146px;
+  display: inline-block; }
+
+.worklist li > div,
+.worklist li > a > div {
+  width: 280px;
+  margin-bottom: 20px; }
+.worklist li:nth-child(2n+1) > div,
+.worklist li:nth-child(2n+1) > a > div {
+  margin-right: 20px; }
+.worklist .keyword {
+  background-color: #B9F0A8;
+  margin-right: 5px;
+  border-radius: 12px;
+  padding: 0px 5px; }
+
+.linklist li > div,
+.linklist li > a > div {
+  width: 280px;
+  margin-bottom: 20px; }
+.linklist li:nth-child(2n+1) > div,
+.linklist li:nth-child(2n+1) > a > div {
+  margin-right: 20px; }
+.linklist div > div > * {
+  vertical-align: middle; }
+
+footer {
+  background-color: #999999;
+  padding: 1px; }
+  footer .copyright {
+    color: #f0f0f0;
+    font-size: 86%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
 #main section:nth-child(1) h2 {
   background-color: #F0BBA8; }
@@ -64,3 +186,8 @@ header nav li:nth-child(3) .navbutton {
 
 header nav li:nth-child(4) .navbutton {
   background-color: #A8DDF0; }
+
+ins {
+  background-color: #999999;
+  color: #f0f0f0;
+  text-decoration: none; }
