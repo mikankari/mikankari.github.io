@@ -48,7 +48,7 @@ body{
 
 header{
 //	@include blockcentering(600px);
-	@include blockcentering(300px);
+	@include blockcentering(320px);
 //	margin-top: 75px;
 //	margin-top: 75px / 2;
 	margin-top: 36px;
@@ -73,15 +73,15 @@ header{
 	}
 	p{
 //		@include blockcentering(600px);
-		@include blockcentering(300px);
+		@include blockcentering(280px);
 		color: $dulltext_color;
 //		margin-top: 40px;
-		margin-top: 40px / 2;
+		margin-top: 20px;
 		position: relative;
-		left: 6px;
-		ins{
-			display: none;
-		}
+		left: 2px;
+//		ins{
+//			display: none;
+//		}
 	}
 	nav{
 		ul{
@@ -134,7 +134,8 @@ h2{
 	font-family: "M+ 1c light", Meiryo, sans-serif;
 	font-size: 100%;
 	text-align: center;
-	margin: 0px 20px;
+//	margin: 0px 20px;
+	margin: 0px 10px;
 	padding: 20px;
 	border-radius: 20px;
 //	@media screen and (min-width: 960px){
@@ -259,4 +260,42 @@ ins{
 	background-color: $dullbase_color;
 	color: $base_color;
 	text-decoration: none;
+}
+
+@media screen and (min-width: 600px){
+	header{
+		@include blockcentering(600px);
+		margin-top: 75px;
+		h1{
+			.title{
+	//			@include imagereplace("images/title.png", 405px, 47px);
+				background-size: 405px 47px;
+				line-height: 47px;
+			}
+			.title-small{
+	//			@include imagereplace("images/title-small.png", 405px, 23px);
+				position: relative;
+				left: -2px;
+				margin-bottom: 17px;
+			}
+		}
+		p{
+			@include blockcentering(600px);
+			margin-top: 40px;
+			position: relative;
+			left: 0px;
+		}
+		nav{
+			ul{
+				@include blockcentering(600px);
+				margin-top: 95px;
+			}
+		}
+		.scrollable{
+			margin-bottom: 40px;
+		}
+	}
+	h2+div{
+		@include blockcentering(600px);
+	}
 }

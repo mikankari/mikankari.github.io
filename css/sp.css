@@ -12,7 +12,7 @@ body {
 header {
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
+  width: 320px;
   margin-top: 36px;
   text-align: center; }
   header h1 .title {
@@ -39,13 +39,11 @@ header {
   header p {
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 280px;
     color: #666666;
-    margin-top: 40px / 2;
+    margin-top: 20px;
     position: relative;
-    left: 6px; }
-    header p ins {
-      display: none; }
+    left: 2px; }
   header nav ul {
     margin-left: auto;
     margin-right: auto;
@@ -90,7 +88,7 @@ h2 {
   font-family: "M+ 1c light", Meiryo, sans-serif;
   font-size: 100%;
   text-align: center;
-  margin: 0px 20px;
+  margin: 0px 10px;
   padding: 20px;
   border-radius: 20px; }
   h2 .title {
@@ -191,3 +189,36 @@ ins {
   background-color: #999999;
   color: #f0f0f0;
   text-decoration: none; }
+
+@media screen and (min-width: 600px) {
+  header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    margin-top: 75px; }
+    header h1 .title {
+      background-size: 405px 47px;
+      line-height: 47px; }
+    header h1 .title-small {
+      position: relative;
+      left: -2px;
+      margin-bottom: 17px; }
+    header p {
+      margin-left: auto;
+      margin-right: auto;
+      width: 600px;
+      margin-top: 40px;
+      position: relative;
+      left: 0px; }
+    header nav ul {
+      margin-left: auto;
+      margin-right: auto;
+      width: 600px;
+      margin-top: 95px; }
+    header .scrollable {
+      margin-bottom: 40px; }
+
+  h2 + div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px; } }
