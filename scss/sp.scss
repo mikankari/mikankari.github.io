@@ -113,15 +113,27 @@ nav,
 	}
 }
 
+#works a{
+	color: $dulltext_color !important;
+	&:hover{
+		opacity: 0.75;
+		text-decoration: underline;
+	}
+}
+
 .navbutton{
 	background-color: $first_color;
 	font-family: "M+ 1c regular", Meiryo, sans-serif;
 	text-align: center;
 	vertical-align: middle;
 	margin: 10px;
+//	margin: 1px;
 	padding-top: 45px;
+//	padding: 10px 0px;
 	border-radius: 65px;
+//	border-radius: 10px;
 	width: 130px;
+//	width: 298px;
 	height: 130px - 45px;
 	.title-small{
 		color: $dulltext_color;
@@ -134,13 +146,14 @@ h2{
 	font-family: "M+ 1c light", Meiryo, sans-serif;
 	font-size: 100%;
 	text-align: center;
-//	margin: 0px 20px;
-	margin: 0px 10px;
+	margin: 0px 20px;
+//	margin: 0px 10px;
 	padding: 20px;
 	border-radius: 20px;
-//	@media screen and (min-width: 960px){
-//		@include blockcentering(880px);
-//	}
+	@media screen and (min-width: 600px){
+		@include blockcentering(560px);
+	}
+	max-width: 580px;
 	.title{
 		font-size: 172%;
 	}
@@ -169,8 +182,16 @@ h2{
 h3,
 .name{
 	font-family: mplus-1c-light, Meiryo, sans-serif;
-//	font-weight: normal;
+	font-weight: normal;
 	font-size: 143%;
+}
+
+h3{
+	font-family: Meiryo, sans-serif;
+}
+
+.name b{
+	font-weight: normal;
 }
 
 .name-small{
@@ -180,6 +201,7 @@ h3,
 }
 
 .meimage{
+	width: 130px;
 	border-radius: 65px;
 }
 
@@ -207,6 +229,12 @@ h3,
 
 .worklist{
 	@include twocolumnlist;
+	.description{
+		height: 6em;
+	}
+	img{
+		width: 100%;
+	}
 	.keyword{
 		background-color: $third_color;
 //		color: $text_color;
@@ -222,6 +250,12 @@ h3,
 	div>div>*{
 		vertical-align: middle;
 		
+	}
+	img{
+		margin-right: 10px;
+	}
+	p{
+		margin-left: 31px;
 	}
 }
 
@@ -299,3 +333,4 @@ ins{
 		@include blockcentering(600px);
 	}
 }
+
