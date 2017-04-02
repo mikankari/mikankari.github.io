@@ -81,10 +81,10 @@ nav ul,
       text-decoration: none; }
 
 /* line 116, ../scss/sp.scss */
-#works a {
+.linklist a {
   color: #666666 !important; }
   /* line 118, ../scss/sp.scss */
-  #works a:hover {
+  .linklist a:hover {
     opacity: 0.75;
     text-decoration: underline; }
 
@@ -216,7 +216,7 @@ h3 {
   margin-right: 10px; }
 /* line 257, ../scss/sp.scss */
 .linklist p {
-  margin-left: 31px; }
+  margin-left: 42px; }
 
 /* line 262, ../scss/sp.scss */
 footer {
