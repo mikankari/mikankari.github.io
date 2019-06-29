@@ -1,243 +1,241 @@
-$base_color: hsl(353, 80%, 98%);
-$first_color: hsl(355, 71%, 80%);
-$second_color: hsl(55, 71%, 80%);
-$third_color: hsl(85, 71%, 80%);
-$fourth_color: hsl(145, 71%, 80%);
-$dullbase_color: hsl(355, 38%, 60%);
-$text_color: hsl(0, 0%, 20%);
-$dulltext_color: hsl(0, 0%, 40%);
+$base_color: hsl(353, 80%, 98%)
+$first_color: hsl(355, 71%, 80%)
+$second_color: hsl(55, 71%, 80%)
+$third_color: hsl(85, 71%, 80%)
+$fourth_color: hsl(145, 71%, 80%)
+$dullbase_color: hsl(355, 38%, 60%)
+$text_color: hsl(0, 0%, 20%)
+$dulltext_color: hsl(0, 0%, 40%)
 
-@font-face{
-	font-family: mplus-1c-light;
-	src: url(http://mplus-fonts.sourceforge.jp/webfonts/mplus-1c-light.ttf);
+@font-face
+	font-family: mplus-1c-light
+	src: url(http://mplus-fonts.sourceforge.jp/webfonts/mplus-1c-light.ttf)
 
-@mixin clearfix{
-	&:after{
-		content: "";
-		clear: both;
-		display: block;
+@mixin clearfix
+	&:after
+		content: ""
+		clear: both
+		display: block
 
-@mixin blockcentering($width){
-	margin-left: auto;
-	margin-right: auto;
-	width: $width;
+@mixin blockcentering($width)
+	margin-left: auto
+	margin-right: auto
+	width: $width
 
-@mixin imagereplace($url, $width, $height){
-	background-image: url(../#{$url});
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: $width $height;
-	text-indent: 100%;
-	line-height: $height;
-	white-space: nowrap;
-	overflow: hidden;
+@mixin imagereplace($url, $width, $height)
+	background-image: url(../#{$url})
+	background-repeat: no-repeat
+	background-position: center
+	background-size: $width $height
+	text-indent: 100%
+	line-height: $height
+	white-space: nowrap
+	overflow: hidden
 
-body{
-	background-color: $base_color;
-	color: $text_color;
-	font-family: Meiryo, sans-serif;
-	font-size: 87.5%;
-	margin: 0px;
-	padding: 0px;
+body
+	background-color: $base_color
+	color: $text_color
+	font-family: Meiryo, sans-serif
+	font-size: 87.5%
+	margin: 0px
+	padding: 0px
 
-header{
-	@include blockcentering(320px);
-	margin-top: 36px;
-	text-align: center;
-	h1{
-		.title{
-			@include imagereplace("images/title.png", 300px, 35px);
-		.title-small{
-			@include imagereplace("images/title-small.png", 300px, 17px);
-			position: relative;
-			left: -2px;
-			margin-bottom: 17px;
-	p{
-		@include blockcentering(280px);
-		color: $dulltext_color;
-		margin-top: 20px;
-		position: relative;
-		left: 2px;
-	nav{
-		ul{
-			@include blockcentering(300px);
-			margin-top: 95px / 2;
-	.scrollable{
-		margin-bottom: 40px;
+header
+	@include blockcentering(320px)
+	margin-top: 36px
+	text-align: center
+	h1
+		.title
+			@include imagereplace("images/title.png", 300px, 35px)
+		.title-small
+			@include imagereplace("images/title-small.png", 300px, 17px)
+			position: relative
+			left: -2px
+			margin-bottom: 17px
+	p
+		@include blockcentering(280px)
+		color: $dulltext_color
+		margin-top: 20px
+		position: relative
+		left: 2px
+	nav
+		ul
+			@include blockcentering(300px)
+			margin-top: 95px / 2
+	.scrollable
+		margin-bottom: 40px
 
 nav,
 #works
-{
-	ul{
-		@include clearfix;
-		padding-left: 0px;
-		li{
-			list-style-type: none;
-			float: left;
-			a{
-				color: $text_color;
-				text-decoration: none;
 
-.linklist a{
-	color: $dulltext_color !important;
-	&:hover{
-		opacity: 0.75;
-		text-decoration: underline;
+	ul
+		@include clearfix
+		padding-left: 0px
+		li
+			list-style-type: none
+			float: left
+			a
+				color: $text_color
+				text-decoration: none
 
-.navbutton{
-	background-color: $first_color;
-	font-family: "M+ 1c regular", Meiryo, sans-serif;
-	text-align: center;
-	vertical-align: middle;
-	margin: 10px;
-	padding-top: 45px;
-	border-radius: 65px;
-	width: 130px;
-	height: 130px - 45px;
-	.title-small{
-		color: $dulltext_color;
-		font-size: 86%;
+.linklist a
+	color: $dulltext_color !important
+	&:hover
+		opacity: 0.75
+		text-decoration: underline
 
-h2{
-	background-color: $first_color;
-	font-family: "M+ 1c light", Meiryo, sans-serif;
-	font-size: 100%;
-	text-align: center;
-	margin: 0px 20px;
-	padding: 20px;
-	border-radius: 20px;
-	@media screen and (min-width: 600px){
-		@include blockcentering(560px);
-	max-width: 580px;
-	.title{
-		font-size: 172%;
-	.title-small{
-		color: $dulltext_color;
-		font-size: 129%;
-	&+div{
-		@include blockcentering(280px);
-		margin-top: 40px;
-		margin-bottom: 40px;
+.navbutton
+	background-color: $first_color
+	font-family: "M+ 1c regular", Meiryo, sans-serif
+	text-align: center
+	vertical-align: middle
+	margin: 10px
+	padding-top: 45px
+	border-radius: 65px
+	width: 130px
+	height: 130px - 45px
+	.title-small
+		color: $dulltext_color
+		font-size: 86%
 
-.clearfix{
-	@include clearfix;
-	.left{
-		float: left;
-	.right{
-		float: right;
+h2
+	background-color: $first_color
+	font-family: "M+ 1c light", Meiryo, sans-serif
+	font-size: 100%
+	text-align: center
+	margin: 0px 20px
+	padding: 20px
+	border-radius: 20px
+	@media screen and (min-width: 600px)
+		@include blockcentering(560px)
+	max-width: 580px
+	.title
+		font-size: 172%
+	.title-small
+		color: $dulltext_color
+		font-size: 129%
+	&+div
+		@include blockcentering(280px)
+		margin-top: 40px
+		margin-bottom: 40px
+
+.clearfix
+	@include clearfix
+	.left
+		float: left
+	.right
+		float: right
 
 h3,
-.name{
-	font-family: mplus-1c-light, Meiryo, sans-serif;
-	font-weight: normal;
-	font-size: 143%;
+.name
+	font-family: mplus-1c-light, Meiryo, sans-serif
+	font-weight: normal
+	font-size: 143%
 
-h3{
-	font-family: Meiryo, sans-serif;
+h3
+	font-family: Meiryo, sans-serif
 
-.name b{
-	font-weight: normal;
+.name b
+	font-weight: normal
 
-.name-small{
-	font-family: mplus-1c-light, Meiryo, sans-serif;
-	font-size: 86%;
+.name-small
+	font-family: mplus-1c-light, Meiryo, sans-serif
+	font-size: 86%
 
-.meimage{
-	width: 130px;
-	border-radius: 65px;
+.meimage
+	width: 130px
+	border-radius: 65px
 
-.meterlist{
-	div{
-		width: 146px;
-		display: inline-block;
-	meter{
+.meterlist
+	div
+		width: 146px
+		display: inline-block
 
-@mixin twocolumnlist{
+@mixin twocolumnlist
 	li>div,
-	li>a>div{
-		width: 280px;
-		margin-bottom: 20px;
+	li>a>div
+		width: 280px
+		margin-bottom: 20px
 	li:nth-child(2n+1)>div,
-	li:nth-child(2n+1)>a>div{
-		margin-right: 20px;
+	li:nth-child(2n+1)>a>div
+		margin-right: 20px
 
-.worklist{
-	@include twocolumnlist;
-	.description{
-		height: 6em;
-	.thumb{
+.worklist
+	@include twocolumnlist
+	.description
+		height: 6em
 
-	img{
-		width: 100%;
-	.keyword{
-		background-color: $third_color;
-		margin-right: 5px;
-		border-radius: 12px;
-		padding: 0px 5px;
+	img
+		width: 100%
+	.keyword
+		background-color: $third_color
+		margin-right: 5px
+		border-radius: 12px
+		padding: 0px 5px
 
-.linklist{
-	@include twocolumnlist;
-	div>div>*{
-		vertical-align: middle;
+.linklist
+	@include twocolumnlist
+	div>div>*
+		vertical-align: middle
 		
-	img{
-		margin-right: 10px;
-	p{
-		margin-left: 42px;
+	img
+		margin-right: 10px
+	p
+		margin-left: 42px
 
-footer{
-	background-color: $dullbase_color;
-	padding: 1px;
-	.copyright{
-		color: $base_color;
-		font-size: 86%;
-		text-align: center;
-		margin-top: 20px;
-		margin-bottom: 20px;
+footer
+	background-color: $dullbase_color
+	padding: 1px
+	.copyright
+		color: $base_color
+		font-size: 86%
+		text-align: center
+		margin-top: 20px
+		margin-bottom: 20px
 
-@for $i from 1 through 4{
-	$color: #ffffff;
-	@if $i == 1{
-		$color: $first_color;
-	} @else if $i == 2{
-		$color: $second_color;
-	} @else if $i == 3{
-		$color: $third_color;
-	} @else if $i == 4{
-		$color: $fourth_color;
-	#main section:nth-child(#{$i}) h2{
-		background-color: $color;
-	header nav li:nth-child(#{$i}) .navbutton{
-		background-color: $color;
+@for $i from 1 through 4
+	$color: #ffffff
+	@if $i == 1
+		$color: $first_color
+	@else if $i == 2
+		$color: $second_color
+	@else if $i == 3
+		$color: $third_color
+	@else if $i == 4
+		$color: $fourth_color
+	#main section:nth-child(#{$i}) h2
+		background-color: $color
+	header nav li:nth-child(#{$i}) .navbutton
+		background-color: $color
 
-ins{
-	background-color: $dullbase_color;
-	color: $base_color;
-	text-decoration: none;
+ins
+	background-color: $dullbase_color
+	color: $base_color
+	text-decoration: none
 
-@media screen and (min-width: 600px){
-	header{
-		@include blockcentering(600px);
-		margin-top: 75px;
-		h1{
-			.title{
-				background-size: 405px 47px;
-				line-height: 47px;
-			.title-small{
-				position: relative;
-				left: -2px;
-				margin-bottom: 17px;
-		p{
-			@include blockcentering(600px);
-			margin-top: 40px;
-			position: relative;
-			left: 0px;
-		nav{
-			ul{
-				@include blockcentering(600px);
-				margin-top: 95px;
-		.scrollable{
-			margin-bottom: 40px;
-	h2+div{
-		@include blockcentering(600px);
+@media screen and (min-width: 600px)
+	header
+		@include blockcentering(600px)
+		margin-top: 75px
+		h1
+			.title
+				background-size: 405px 47px
+				line-height: 47px
+			.title-small
+				position: relative
+				left: -2px
+				margin-bottom: 17px
+		p
+			@include blockcentering(600px)
+			margin-top: 40px
+			position: relative
+			left: 0px
+		nav
+			ul
+				@include blockcentering(600px)
+				margin-top: 95px
+		.scrollable
+			margin-bottom: 40px
+	h2+div
+		@include blockcentering(600px)
 
