@@ -10,21 +10,17 @@ $dulltext_color: hsl(0, 0%, 40%);
 @font-face{
 	font-family: mplus-1c-light;
 	src: url(http://mplus-fonts.sourceforge.jp/webfonts/mplus-1c-light.ttf);
-}
 
 @mixin clearfix{
 	&:after{
 		content: "";
 		clear: both;
 		display: block;
-	}
-}
 
 @mixin blockcentering($width){
 	margin-left: auto;
 	margin-right: auto;
 	width: $width;
-}
 
 @mixin imagereplace($url, $width, $height){
 	background-image: url(../#{$url});
@@ -35,7 +31,6 @@ $dulltext_color: hsl(0, 0%, 40%);
 	line-height: $height;
 	white-space: nowrap;
 	overflow: hidden;
-}
 
 body{
 	background-color: $base_color;
@@ -44,7 +39,6 @@ body{
 	font-size: 87.5%;
 	margin: 0px;
 	padding: 0px;
-}
 
 header{
 	@include blockcentering(320px);
@@ -53,31 +47,23 @@ header{
 	h1{
 		.title{
 			@include imagereplace("images/title.png", 300px, 35px);
-		}
 		.title-small{
 			@include imagereplace("images/title-small.png", 300px, 17px);
 			position: relative;
 			left: -2px;
 			margin-bottom: 17px;
-		}
-	}
 	p{
 		@include blockcentering(280px);
 		color: $dulltext_color;
 		margin-top: 20px;
 		position: relative;
 		left: 2px;
-	}
 	nav{
 		ul{
 			@include blockcentering(300px);
 			margin-top: 95px / 2;
-		}
-	}
 	.scrollable{
 		margin-bottom: 40px;
-	}
-}
 
 nav,
 #works
@@ -91,18 +77,12 @@ nav,
 			a{
 				color: $text_color;
 				text-decoration: none;
-			}
-		}
-	}
-}
 
 .linklist a{
 	color: $dulltext_color !important;
 	&:hover{
 		opacity: 0.75;
 		text-decoration: underline;
-	}
-}
 
 .navbutton{
 	background-color: $first_color;
@@ -117,8 +97,6 @@ nav,
 	.title-small{
 		color: $dulltext_color;
 		font-size: 86%;
-	}
-}
 
 h2{
 	background-color: $first_color;
@@ -130,110 +108,82 @@ h2{
 	border-radius: 20px;
 	@media screen and (min-width: 600px){
 		@include blockcentering(560px);
-	}
 	max-width: 580px;
 	.title{
 		font-size: 172%;
-	}
 	.title-small{
 		color: $dulltext_color;
 		font-size: 129%;
-	}
 	&+div{
 		@include blockcentering(280px);
 		margin-top: 40px;
 		margin-bottom: 40px;
-	}
-}
 
 .clearfix{
 	@include clearfix;
 	.left{
 		float: left;
-	}
 	.right{
 		float: right;
-	}
-}
 
 h3,
 .name{
 	font-family: mplus-1c-light, Meiryo, sans-serif;
 	font-weight: normal;
 	font-size: 143%;
-}
 
 h3{
 	font-family: Meiryo, sans-serif;
-}
 
 .name b{
 	font-weight: normal;
-}
 
 .name-small{
 	font-family: mplus-1c-light, Meiryo, sans-serif;
 	font-size: 86%;
-}
 
 .meimage{
 	width: 130px;
 	border-radius: 65px;
-}
 
 .meterlist{
 	div{
 		width: 146px;
 		display: inline-block;
-	}
 	meter{
-	}
-}
 
 @mixin twocolumnlist{
 	li>div,
 	li>a>div{
 		width: 280px;
 		margin-bottom: 20px;
-	}
 	li:nth-child(2n+1)>div,
 	li:nth-child(2n+1)>a>div{
 		margin-right: 20px;
-	}
-}
 
 .worklist{
 	@include twocolumnlist;
 	.description{
 		height: 6em;
-	}
 	.thumb{
 
-	}
 	img{
 		width: 100%;
-	}
 	.keyword{
 		background-color: $third_color;
 		margin-right: 5px;
 		border-radius: 12px;
 		padding: 0px 5px;
-	}
-}
 
 .linklist{
 	@include twocolumnlist;
 	div>div>*{
 		vertical-align: middle;
 		
-	}
 	img{
 		margin-right: 10px;
-	}
 	p{
 		margin-left: 42px;
-	}
-}
 
 footer{
 	background-color: $dullbase_color;
@@ -244,8 +194,6 @@ footer{
 		text-align: center;
 		margin-top: 20px;
 		margin-bottom: 20px;
-	}
-}
 
 @for $i from 1 through 4{
 	$color: #ffffff;
@@ -257,20 +205,15 @@ footer{
 		$color: $third_color;
 	} @else if $i == 4{
 		$color: $fourth_color;
-	}
 	#main section:nth-child(#{$i}) h2{
 		background-color: $color;
-	}
 	header nav li:nth-child(#{$i}) .navbutton{
 		background-color: $color;
-	}
-}
 
 ins{
 	background-color: $dullbase_color;
 	color: $base_color;
 	text-decoration: none;
-}
 
 @media screen and (min-width: 600px){
 	header{
@@ -280,31 +223,21 @@ ins{
 			.title{
 				background-size: 405px 47px;
 				line-height: 47px;
-			}
 			.title-small{
 				position: relative;
 				left: -2px;
 				margin-bottom: 17px;
-			}
-		}
 		p{
 			@include blockcentering(600px);
 			margin-top: 40px;
 			position: relative;
 			left: 0px;
-		}
 		nav{
 			ul{
 				@include blockcentering(600px);
 				margin-top: 95px;
-			}
-		}
 		.scrollable{
 			margin-bottom: 40px;
-		}
-	}
 	h2+div{
 		@include blockcentering(600px);
-	}
-}
 
