@@ -1,11 +1,11 @@
-$base_color: #f0f0f0;
-$first_color: #F0BBA8;
-$second_color: #F0DFA8;
-$third_color: #B9F0A8;
-$fourth_color: #A8DDF0;
-$dullbase_color: #999999;
-$text_color: #333333;
-$dulltext_color: #666666;
+$base_color: hsl(353, 80%, 98%);
+$first_color: hsl(355, 71%, 80%);
+$second_color: hsl(55, 71%, 80%);
+$third_color: hsl(85, 71%, 80%);
+$fourth_color: hsl(145, 71%, 80%);
+$dullbase_color: hsl(355, 38%, 60%);
+$text_color: hsl(0, 0%, 20%);
+$dulltext_color: hsl(0, 0%, 40%);
 
 @font-face{
 	font-family: mplus-1c-light;

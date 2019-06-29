@@ -3,7 +3,7 @@
   src: url(http://mplus-fonts.sourceforge.jp/webfonts/mplus-1c-light.ttf); }
 /* line 40, ../scss/sp.scss */
 body {
-  background-color: #f0f0f0;
+  background-color: #fef6f7;
   color: #333333;
   font-family: Meiryo, sans-serif;
   font-size: 87.5%;
@@ -90,7 +90,7 @@ nav ul,
 
 /* line 124, ../scss/sp.scss */
 .navbutton {
-  background-color: #F0BBA8;
+  background-color: #f0a8ae;
   font-family: "M+ 1c regular", Meiryo, sans-serif;
   text-align: center;
   vertical-align: middle;
@@ -106,7 +106,7 @@ nav ul,
 
 /* line 144, ../scss/sp.scss */
 h2 {
-  background-color: #F0BBA8;
+  background-color: #f0a8ae;
   font-family: "M+ 1c light", Meiryo, sans-serif;
   font-size: 100%;
   text-align: center;
@@ -194,7 +194,7 @@ h3 {
   width: 100%; }
 /* line 242, ../scss/sp.scss */
 .worklist .keyword {
-  background-color: #B9F0A8;
+  background-color: #d2f0a8;
   margin-right: 5px;
   border-radius: 12px;
   padding: 0px 5px; }
@@ -220,11 +220,11 @@ h3 {
 
 /* line 266, ../scss/sp.scss */
 footer {
-  background-color: #999999;
+  background-color: #c07279;
   padding: 1px; }
   /* line 269, ../scss/sp.scss */
   footer .copyright {
-    color: #f0f0f0;
+    color: #fef6f7;
     font-size: 86%;
     text-align: center;
     margin-top: 20px;
@@ -232,40 +232,40 @@ footer {
 
 /* line 289, ../scss/sp.scss */
 #main section:nth-child(1) h2 {
-  background-color: #F0BBA8; }
+  background-color: #f0a8ae; }
 
 /* line 292, ../scss/sp.scss */
 header nav li:nth-child(1) .navbutton {
-  background-color: #F0BBA8; }
+  background-color: #f0a8ae; }
 
 /* line 289, ../scss/sp.scss */
 #main section:nth-child(2) h2 {
-  background-color: #F0DFA8; }
+  background-color: #f0eaa8; }
 
 /* line 292, ../scss/sp.scss */
 header nav li:nth-child(2) .navbutton {
-  background-color: #F0DFA8; }
+  background-color: #f0eaa8; }
 
 /* line 289, ../scss/sp.scss */
 #main section:nth-child(3) h2 {
-  background-color: #B9F0A8; }
+  background-color: #d2f0a8; }
 
 /* line 292, ../scss/sp.scss */
 header nav li:nth-child(3) .navbutton {
-  background-color: #B9F0A8; }
+  background-color: #d2f0a8; }
 
 /* line 289, ../scss/sp.scss */
 #main section:nth-child(4) h2 {
-  background-color: #A8DDF0; }
+  background-color: #a8f0c6; }
 
 /* line 292, ../scss/sp.scss */
 header nav li:nth-child(4) .navbutton {
-  background-color: #A8DDF0; }
+  background-color: #a8f0c6; }
 
 /* line 297, ../scss/sp.scss */
 ins {
-  background-color: #999999;
-  color: #f0f0f0;
+  background-color: #c07279;
+  color: #fef6f7;
   text-decoration: none; }
 
 @media screen and (min-width: 600px) {
