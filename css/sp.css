@@ -17,7 +17,7 @@ header {
   width: 320px;
   margin-top: 36px;
   text-align: center; }
-  /* line 58, ../scss/sp.scss */
+  /* line 54, ../scss/sp.scss */
   header h1 .title {
     background-image: url(../images/title.png);
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@ header {
     line-height: 35px;
     white-space: nowrap;
     overflow: hidden; }
-  /* line 64, ../scss/sp.scss */
+  /* line 57, ../scss/sp.scss */
   header h1 .title-small {
     background-image: url(../images/title-small.png);
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@ header {
     position: relative;
     left: -2px;
     margin-bottom: 17px; }
-  /* line 74, ../scss/sp.scss */
+  /* line 64, ../scss/sp.scss */
   header p {
     margin-left: auto;
     margin-right: auto;
@@ -49,17 +49,17 @@ header {
     margin-top: 20px;
     position: relative;
     left: 2px; }
-  /* line 87, ../scss/sp.scss */
+  /* line 72, ../scss/sp.scss */
   header nav ul {
     margin-left: auto;
     margin-right: auto;
     width: 300px;
     margin-top: 95px / 2; }
-  /* line 94, ../scss/sp.scss */
+  /* line 77, ../scss/sp.scss */
   header .scrollable {
     margin-bottom: 40px; }
 
-/* line 102, ../scss/sp.scss */
+/* line 85, ../scss/sp.scss */
 nav ul,
 #works ul {
   padding-left: 0px; }
@@ -69,26 +69,26 @@ nav ul,
     content: "";
     clear: both;
     display: block; }
-  /* line 105, ../scss/sp.scss */
+  /* line 88, ../scss/sp.scss */
   nav ul li,
   #works ul li {
     list-style-type: none;
     float: left; }
-    /* line 108, ../scss/sp.scss */
+    /* line 91, ../scss/sp.scss */
     nav ul li a,
     #works ul li a {
       color: #333333;
       text-decoration: none; }
 
-/* line 116, ../scss/sp.scss */
+/* line 99, ../scss/sp.scss */
 .linklist a {
   color: #666666 !important; }
-  /* line 118, ../scss/sp.scss */
+  /* line 101, ../scss/sp.scss */
   .linklist a:hover {
     opacity: 0.75;
     text-decoration: underline; }
 
-/* line 124, ../scss/sp.scss */
+/* line 107, ../scss/sp.scss */
 .navbutton {
   background-color: #f0a8ae;
   font-family: "M+ 1c regular", Meiryo, sans-serif;
@@ -99,12 +99,12 @@ nav ul,
   border-radius: 65px;
   width: 130px;
   height: 85px; }
-  /* line 138, ../scss/sp.scss */
+  /* line 117, ../scss/sp.scss */
   .navbutton .title-small {
     color: #666666;
     font-size: 86%; }
 
-/* line 144, ../scss/sp.scss */
+/* line 123, ../scss/sp.scss */
 h2 {
   background-color: #f0a8ae;
   font-family: "M+ 1c light", Meiryo, sans-serif;
@@ -115,19 +115,19 @@ h2 {
   border-radius: 20px;
   max-width: 580px; }
   @media screen and (min-width: 600px) {
-    /* line 144, ../scss/sp.scss */
+    /* line 123, ../scss/sp.scss */
     h2 {
       margin-left: auto;
       margin-right: auto;
       width: 560px; } }
-  /* line 157, ../scss/sp.scss */
+  /* line 135, ../scss/sp.scss */
   h2 .title {
     font-size: 172%; }
-  /* line 160, ../scss/sp.scss */
+  /* line 138, ../scss/sp.scss */
   h2 .title-small {
     color: #666666;
     font-size: 129%; }
-  /* line 164, ../scss/sp.scss */
+  /* line 142, ../scss/sp.scss */
   h2 + div {
     margin-left: auto;
     margin-right: auto;
@@ -140,89 +140,89 @@ h2 {
   content: "";
   clear: both;
   display: block; }
-/* line 174, ../scss/sp.scss */
+/* line 151, ../scss/sp.scss */
 .clearfix .left {
   float: left; }
-/* line 177, ../scss/sp.scss */
+/* line 154, ../scss/sp.scss */
 .clearfix .right {
   float: right; }
 
-/* line 182, ../scss/sp.scss */
+/* line 159, ../scss/sp.scss */
 h3,
 .name {
   font-family: mplus-1c-light, Meiryo, sans-serif;
   font-weight: normal;
   font-size: 143%; }
 
-/* line 189, ../scss/sp.scss */
+/* line 166, ../scss/sp.scss */
 h3 {
   font-family: Meiryo, sans-serif; }
 
-/* line 193, ../scss/sp.scss */
+/* line 170, ../scss/sp.scss */
 .name b {
   font-weight: normal; }
 
-/* line 197, ../scss/sp.scss */
+/* line 174, ../scss/sp.scss */
 .name-small {
   font-family: mplus-1c-light, Meiryo, sans-serif;
   font-size: 86%; }
 
-/* line 203, ../scss/sp.scss */
+/* line 179, ../scss/sp.scss */
 .meimage {
   width: 130px;
   border-radius: 65px; }
 
-/* line 209, ../scss/sp.scss */
+/* line 185, ../scss/sp.scss */
 .meterlist div {
   width: 146px;
   display: inline-block; }
 
-/* line 219, ../scss/sp.scss */
+/* line 194, ../scss/sp.scss */
 .worklist li > div,
 .worklist li > a > div {
   width: 280px;
   margin-bottom: 20px; }
-/* line 224, ../scss/sp.scss */
+/* line 199, ../scss/sp.scss */
 .worklist li:nth-child(2n+1) > div,
 .worklist li:nth-child(2n+1) > a > div {
   margin-right: 20px; }
-/* line 232, ../scss/sp.scss */
+/* line 207, ../scss/sp.scss */
 .worklist .description {
   height: 6em; }
-/* line 239, ../scss/sp.scss */
+/* line 213, ../scss/sp.scss */
 .worklist img {
   width: 100%; }
-/* line 242, ../scss/sp.scss */
+/* line 216, ../scss/sp.scss */
 .worklist .keyword {
   background-color: #d2f0a8;
   margin-right: 5px;
   border-radius: 12px;
   padding: 0px 5px; }
 
-/* line 219, ../scss/sp.scss */
+/* line 194, ../scss/sp.scss */
 .linklist li > div,
 .linklist li > a > div {
   width: 280px;
   margin-bottom: 20px; }
-/* line 224, ../scss/sp.scss */
+/* line 199, ../scss/sp.scss */
 .linklist li:nth-child(2n+1) > div,
 .linklist li:nth-child(2n+1) > a > div {
   margin-right: 20px; }
-/* line 254, ../scss/sp.scss */
+/* line 226, ../scss/sp.scss */
 .linklist div > div > * {
   vertical-align: middle; }
-/* line 258, ../scss/sp.scss */
+/* line 230, ../scss/sp.scss */
 .linklist img {
   margin-right: 10px; }
-/* line 261, ../scss/sp.scss */
+/* line 233, ../scss/sp.scss */
 .linklist p {
   margin-left: 42px; }
 
-/* line 266, ../scss/sp.scss */
+/* line 238, ../scss/sp.scss */
 footer {
   background-color: #c07279;
   padding: 1px; }
-  /* line 269, ../scss/sp.scss */
+  /* line 241, ../scss/sp.scss */
   footer .copyright {
     color: #fef6f7;
     font-size: 86%;
@@ -230,61 +230,61 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px; }
 
-/* line 289, ../scss/sp.scss */
+/* line 261, ../scss/sp.scss */
 #main section:nth-child(1) h2 {
   background-color: #f0a8ae; }
 
-/* line 292, ../scss/sp.scss */
+/* line 264, ../scss/sp.scss */
 header nav li:nth-child(1) .navbutton {
   background-color: #f0a8ae; }
 
-/* line 289, ../scss/sp.scss */
+/* line 261, ../scss/sp.scss */
 #main section:nth-child(2) h2 {
   background-color: #f0eaa8; }
 
-/* line 292, ../scss/sp.scss */
+/* line 264, ../scss/sp.scss */
 header nav li:nth-child(2) .navbutton {
   background-color: #f0eaa8; }
 
-/* line 289, ../scss/sp.scss */
+/* line 261, ../scss/sp.scss */
 #main section:nth-child(3) h2 {
   background-color: #d2f0a8; }
 
-/* line 292, ../scss/sp.scss */
+/* line 264, ../scss/sp.scss */
 header nav li:nth-child(3) .navbutton {
   background-color: #d2f0a8; }
 
-/* line 289, ../scss/sp.scss */
+/* line 261, ../scss/sp.scss */
 #main section:nth-child(4) h2 {
   background-color: #a8f0c6; }
 
-/* line 292, ../scss/sp.scss */
+/* line 264, ../scss/sp.scss */
 header nav li:nth-child(4) .navbutton {
   background-color: #a8f0c6; }
 
-/* line 297, ../scss/sp.scss */
+/* line 269, ../scss/sp.scss */
 ins {
   background-color: #c07279;
   color: #fef6f7;
   text-decoration: none; }
 
 @media screen and (min-width: 600px) {
-  /* line 304, ../scss/sp.scss */
+  /* line 276, ../scss/sp.scss */
   header {
     margin-left: auto;
     margin-right: auto;
     width: 600px;
     margin-top: 75px; }
-    /* line 308, ../scss/sp.scss */
+    /* line 280, ../scss/sp.scss */
     header h1 .title {
       background-size: 405px 47px;
       line-height: 47px; }
-    /* line 313, ../scss/sp.scss */
+    /* line 284, ../scss/sp.scss */
     header h1 .title-small {
       position: relative;
       left: -2px;
       margin-bottom: 17px; }
-    /* line 320, ../scss/sp.scss */
+    /* line 290, ../scss/sp.scss */
     header p {
       margin-left: auto;
       margin-right: auto;
@@ -292,17 +292,17 @@ ins {
       margin-top: 40px;
       position: relative;
       left: 0px; }
-    /* line 327, ../scss/sp.scss */
+    /* line 297, ../scss/sp.scss */
     header nav ul {
       margin-left: auto;
       margin-right: auto;
       width: 600px;
       margin-top: 95px; }
-    /* line 332, ../scss/sp.scss */
+    /* line 302, ../scss/sp.scss */
     header .scrollable {
       margin-bottom: 40px; }
 
-  /* line 336, ../scss/sp.scss */
+  /* line 306, ../scss/sp.scss */
   h2 + div {
     margin-left: auto;
     margin-right: auto;
