@@ -8,8 +8,8 @@ $text_color: hsl(0, 0%, 20%)
 $dulltext_color: hsl(0, 0%, 40%)
 
 @font-face
-	font-family: mplus-1c-light
-	src: url(http://mplus-fonts.sourceforge.jp/webfonts/mplus-1c-light.ttf)
+	font-family: mplus-1c-regular
+	src: url(mplus-1c-regular-sub.ttf)
 
 @mixin clearfix
 	&:after
@@ -90,7 +90,7 @@ nav,
 
 .navbutton
 	background-color: $first_color
-	font-family: "M+ 1c regular", Meiryo, sans-serif
+	font-family: mplus-1c-regular, Meiryo, sans-serif
 	text-align: center
 	vertical-align: middle
 	margin: 10px
@@ -104,7 +104,8 @@ nav,
 
 h2
 	background-color: $first_color
-	font-family: "M+ 1c light", Meiryo, sans-serif
+	font-family: mplus-1c-regular, Meiryo, sans-serif
+	font-weight: normal
 	font-size: 100%
 	text-align: center
 	margin: 0px 20px
@@ -132,18 +133,15 @@ h2
 
 h3,
 .name
-	font-family: mplus-1c-light, Meiryo, sans-serif
+	font-family: mplus-1c-regular, Meiryo, sans-serif
 	font-weight: normal
 	font-size: 143%
-
-h3
-	font-family: Meiryo, sans-serif
 
 .name b
 	font-weight: normal
 
 .name-small
-	font-family: mplus-1c-light, Meiryo, sans-serif
+	font-family: mplus-1c-regular, Meiryo, sans-serif
 	font-size: 86%
 
 .meimage
