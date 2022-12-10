@@ -1,11 +1,11 @@
-$base_color: hsl(331, 41%, 95%)
+$base_color: hsl(331, 41%, 96%)
 
 $first_color: hsl(331, 41%, 80%)
 $second_color: hsl(30, 41%, 80%)
 $third_color: hsl(150, 41%, 80%)
 $fourth_color: hsl(212, 41%, 80%)
 
-$dullbase_color: hsl(331, 5%, 60%)
+$dullbase_color: hsl(331, 4%, 60%)
 
 $text_color: hsl(0, 0%, 20%)
 $dulltext_color: hsl(0, 0%, 40%)
@@ -75,11 +75,12 @@ nav,
 #works
 
 	ul
-		@include clearfix
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
 		padding-left: 0px
 		li
 			list-style-type: none
-			float: left
 			a
 				color: $text_color
 				text-decoration: none
@@ -161,20 +162,17 @@ h3,
 	font-size: 100%
 	white-space: nowrap
 
-@mixin twocolumnlist
-	li>div,
-	li>a>div
-		width: 280px
-		margin-bottom: 20px
-	li:nth-child(2n+1)>div,
-	li:nth-child(2n+1)>a>div
-		margin-right: 20px
+.strengths
+	dl, dt, dd
+		margin: 0
+		padding: 0
+	dd
+		color: $dulltext_color
 
 .worklist
-	@include twocolumnlist
-	.description
-		height: 6em
-
+	li
+		width: 280px
+		margin-bottom: 20px
 	img
 		width: 100%
 	.keyword
@@ -184,7 +182,8 @@ h3,
 		padding: 0px 5px
 
 .linklist
-	@include twocolumnlist
+	li
+		width: 280px
 	div>div>*
 		vertical-align: middle
 		
@@ -192,6 +191,7 @@ h3,
 		margin-right: 10px
 	p
 		margin-left: 42px
+		margin-bottom: 20px
 
 footer
 	background-color: $dullbase_color
