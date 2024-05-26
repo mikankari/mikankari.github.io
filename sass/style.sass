@@ -15,6 +15,7 @@ $default_font_family: Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiry
 @font-face
 	font-family: mplus-1c-regular
 	src: url(mplus-1c-regular-sub.ttf)
+	font-display: fallback
 
 @mixin clearfix
 	&:after
@@ -72,6 +73,9 @@ header
 			margin-top: 95px / 2
 	.scrollable
 		margin-bottom: 40px
+		img
+			width: 65px
+			height: 35px
 
 nav,
 #works
@@ -152,6 +156,7 @@ h3,
 
 .meimage
 	width: 130px
+	height: 130px
 	border-radius: 65px
 
 .meterlist
@@ -191,6 +196,8 @@ h3,
 		vertical-align: middle
 		
 	img
+		width: 32px
+		height: 32px
 		max-width: 32px
 		max-height: 32px
 		margin-right: 10px
