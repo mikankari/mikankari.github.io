@@ -83,7 +83,7 @@ nav,
 	ul
 		display: flex
 		flex-wrap: wrap
-		justify-content: space-around
+		justify-content: space-between
 		padding-left: 0px
 		li
 			list-style-type: none
@@ -122,7 +122,7 @@ h2
 	padding: 20px
 	border-radius: 20px
 	@media screen and (min-width: 600px)
-		@include blockcentering(560px)
+		@include blockcentering(540px)
 	max-width: 580px
 	.title
 		font-size: 172%
@@ -170,12 +170,8 @@ h3,
 	word-break: keep-all
 	overflow-wrap: break-word
 
-.strengths
-	dl, dt, dd
-		margin: 0
-		padding: 0
-	dd
-		color: $dulltext_color
+.sidenote
+	margin-left: 1em
 
 .worklist
 	li
@@ -263,5 +259,5 @@ ins
 		.scrollable
 			margin-bottom: 40px
 	h2+div
-		@include blockcentering(600px)
+		@include blockcentering(580px)
 
