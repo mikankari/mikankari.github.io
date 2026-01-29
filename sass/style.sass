@@ -71,6 +71,11 @@ header
 		ul
 			@include blockcentering(300px)
 			margin-top: 95px / 2
+			a
+				color: $text_color
+				text-decoration: none
+				&:hover
+					text-decoration: none
 	.scrollable
 		margin-bottom: 40px
 		img
@@ -87,18 +92,15 @@ nav,
 		padding-left: 0px
 		li
 			list-style-type: none
-			a
-				color: $text_color
-				text-decoration: none
 
-.linklist a,
-#aboutme a
-	color: $dulltext_color !important
+a
+	color: $dulltext_color
+	text-decoration: none
 	&:hover
-		opacity: 0.75
-		text-decoration: underline
+		opacity: 0.8
 
 .navbutton
+	display: inline-block
 	background-color: $first_color
 	font-family: mplus-1c-regular, $default_font_family
 	text-align: center
@@ -159,6 +161,10 @@ h3,
 	height: 130px
 	border-radius: 65px
 
+hr
+	border: none
+	border-top: 1px dashed $dulltext_color
+
 .meterlist
 	div
 		width: 146px
@@ -177,18 +183,27 @@ h3,
 	li
 		width: 280px
 		margin-bottom: 20px
-	img
+	.keyvisual img
 		width: 100%
+	h4
+		margin-top: 0.5em
+		margin-bottom: 0
 	.keyword
-		background-color: $third_color
+		background-color: $second_color
 		margin-right: 5px
 		border-radius: 12px
 		padding: 0px 5px
+	.links
+		margin: 1em 0
+		*
+			vertical-align: top
 
 .linklist
 	li
 		width: 280px
 		margin-bottom: 20px
+	a>div
+		display: inline-block
 	div>div>*
 		vertical-align: middle
 		
@@ -204,6 +219,9 @@ h3,
 
 summary.moreitems
 	text-align: center
+	color: $dulltext_color
+	&:hover
+		opacity: 0.8
 
 footer
 	background-color: $dullbase_color
